@@ -1,0 +1,148 @@
+/* background colors from https://flatuicolors.com/palette/fr 
+a nice grid probably?
+rems ems etc.
+better interaction
+colors
+make it all better
+etc.
+*/
+
+body {
+    background-color: #e55039;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 20px;
+    background-color: snow;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
+    /* sticky? or appears when scroll down up kind of thing?*/
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    background-color: navy;
+}
+
+nav {
+    display: inline-flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+h6 {
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+    transition: color .4s ease-in;
+    color: rgba(0, 0, 0, .85);
+}
+
+a:hover, a:focus {
+    color: rosybrown;
+}
+
+section {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+
+hgroup {
+    color: #0a3d62;
+    width: calc(100% - 50px);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.about > img {
+    width: 600px;
+    height: 300px;
+    background-color: navy;
+    margin: 20px;
+}
+
+.career {
+    display: flex;
+    flex-direction: row;
+}
+
+.current {
+}
+
+.summary {
+} /* applies in multiple places */
+
+h2 {
+    color: #0a3d62;
+    font-size: 1.5rem;
+}
+p {
+    line-height: 1.4;
+    max-width: 600px;
+}
+
+.skills {
+    font-size: 1.2;
+    width: 32%;
+    color: rosybrown;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.projects > .summary {
+    grid-column: 1 / 4;
+    width: 100%;
+}
+
+.project {
+    background-color: rosybrown;
+    ;
+}
+
+.contact {
+}
+
+.contact > a {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.contact > a:first-of-type {
+    padding-left: 0;
+}
+
+footer {
+    padding: 20px 0;
+}
